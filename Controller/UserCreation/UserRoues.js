@@ -19,7 +19,6 @@ const upload = multer({storage : storage})
 
 router.post('/CraeteUser' , UserController.CraeteUser);
 router.post('/loginUser' , UserController.loginUser);
-router.post('/test' ,Auth, UserController.test);
 router.post('/UploadFile' ,Auth, upload.array('file',10),UserController.UploadFile);
 router.post('/deleteFile' ,Auth, UserController.deleteFile);
 router.post('/ReadFile' ,Auth, UserController.ReadFile);

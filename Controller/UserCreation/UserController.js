@@ -70,9 +70,6 @@ module.exports = {
       });
     }
   },
-  test: async (req, res) => {
-    res.send("hii")
-  },
 
   UploadFile : async(req , res) => {
     try {
